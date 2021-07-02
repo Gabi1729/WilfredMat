@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wilfredmat</title>
+    <link rel = "icon" type = "image.png" href = "foticos/wilf2.png">
+    <link href="estilachos/wilfmat.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+
+    <script src="https://kit.fontawesome.com/fcb30bc39f.js" crossorigin="anonymous"></script>
+
+    <script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=AM_CHTML"> </script>
+</head>
+
+<body>
+    <header>
+        <h1>WilfredMat</h1>
+    </header>
+    <section class="iconos">
+        <details open><summary><!---<a class="fas fa-bars"></a>---></summary>
+            <a class="fas fa-home"></a>
+            <a class="fas fa-calculator" href="example.html"></a>
+            <a class="fas fa-user" href = "about.html"> </a>
+        </details>
+        
+    </section>
+    <section class= "aviso">
+        <h2 class = "oscuritos">Welcome!</h2>
+        <p class = "rojitos">This is a very simple site created to support the topic of double integrals through short explanations and examples. This material is taken from chapter 5 of J.E. Marsden and A.J. Tromba, Vector Calculus 3rd Edition. I hope you like it. For a clearer view of an image you can hover over it, it will expand automatically.</p>
+    </section>
+    <section class = "info">
+        <h3 class = "oscuritos">Double integrals</h3>
+        <p class = "oscuritos">We consider a continuus function of two variables:<br>
+            `f:R\subset \mathbb{R}^2->R`<br>which has a domain R as a rectangle with sides that are paralell to the  coordinate axes. The R rectangle can be described in terms of the closed intervals: [a,b] and [c,d].</p>
+            <img src="foticos/Rfigure.png" class = "explic1">
+        <p class = "oscuritos">Then we can write:</p>
+        <details class = "flecha" class = "rojitos"><summary class = "rojitos">For  `f(x,y)>0` above R, we have the graph for `z = f(x,y)`</summary>
+            <img src="foticos/zfx.png" class = "explic1">
+            <p class = "oscuritos"> Were x = a, x = b, y = c and y = d are the borders of a region V in the space.</p>
+            
+        </details>
+        <details class = "flecha" class = "rojitos"><summary class = "rojitos">For  `f(x,z)>0` above R, we have the graph for `y = f(x,z)`</summary>
+            <img src="foticos/yfz.png" class = "explic1">
+            <p class = "oscuritos"> Were x = a, x = b, z = c and z = d are the borders of a region V in the space.</p>
+        </details>
+         <details class = "flecha" class = "rojitos"><summary class = "rojitos">For  `f(y,z)>0` above R, we have the graph for `x = f(y,z)`</summary>
+            <img src="foticos/xfz.png" class = "explic1">
+            <p class = "oscuritos">Were y = a, y = b, z = c and z = d are the borders of a region V in the space.</p>
+        </details>
+        <p class = "oscuritos">The volume of the region above R and below  the graph for the function f  is called the Double Integral  of f over R and in the case of z = f(x,y), it is denoted by:</p> 
+        <p class = "expresiones" class = "oscuritos">`int_(R)`,`int(R)f(x,y)dA`,</p>
+        <p class = "expresiones" class = "oscuritos">`int_(R)[intf(x,y)dxdy]`</p>
+        <div class = "revision">
+            <a class = "rojitos" href = "example.html">Care to revise this topic?</a>
+        </div>   
+
+    </section>
+    <section class = "examples">
+        <h3 class = "oscuritos">Some examples of graphs that you can solve with the help of double integrals </h3>
+        <img src="foticos/toroide.png" class = "explic1">
+            <p class = "oscuritos"> This is a Toroid. it is widely studied in the field of physics.</p>
+        <img src="foticos/esfera.png" class = "explic1">
+            <p class = "oscuritos"> This is a Sphere. It can also be interesting to study it with triple integrals.</p>
+        <img src="foticos/hojita.png" class = "explic1">
+            <p class = "oscuritos"> This is a fun figure shaped like a sheet of paper.</p>
+        <img src="foticos/hiperboloide.png" class = "explic1">
+            <p class = "oscuritos"> This is hyperboloid, it kind of looks like a toy and is very interesting to study.</p>
+
+
+    </section>
+    <!-- <div class="cmath">
+        `f(x)= int_(0)^(2 pi) sin\ x\ dx = 0`
+    </div> -->
+    <footer>
+        <p class = "mismo">This site was created by Gabriela Ortiz for the Web Design specialization in Coursera.</p>
+        <p class = "otro"><a class="fas fa-user" href = "about.html"></a>More info about me here</p>
+        <p class = "otro"><a class="fab fa-linkedin" href = "https://www.linkedin.com/in/gabriela-ortiz-1610471b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY5fD4%2BT2Ru%2BHyX%2BYceuTeg%3D%3D"></a> Find me on LinkedIn</p></footer>
+</body>
+</html>

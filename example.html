@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Double integral example</title>
+    <link rel = "icon" type = "image.png" href = "foticos/wilf2.png">
+    <link href="estilachos/wilfmat.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+
+    <script src="https://kit.fontawesome.com/fcb30bc39f.js" crossorigin="anonymous"></script>
+
+    <script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=AM_CHTML"> </script>
+</head>
+
+<body>
+    <header>
+        <h1>WilfredMat</h1>
+    </header>
+    <section class="iconos">
+        <details open><summary><!---<a class="fas fa-bars"></a>---></summary>
+            <a class="fas fa-home" href = "wilfredmat.html"></a>
+            <a class="fas fa-calculator" href="example.html"></a>
+            <a class="fas fa-user" href = "about.html"> </a>
+        </details>
+        
+    </section>
+    <section class = "abre">
+        <h2 class = "rojitos">Double Integral Example</h2>
+        <p class = "oscuritos">Given `z = f(x,y) = z^2 + y^2` and `R = [-1,1] X [0,1]`. Evaluate the integral of `f(x)` over R. That is: 
+        `int_(R)f(x,y) dxdy`.</p>
+    </section>
+    <section class = "bloques">
+        <div class = "impar">
+            <h3 class = "rojitos"> Step 1</h3>
+            <p class = "oscuritos">Write the full expresion:</p>
+            <p class = "expresiones" class = "oscuritos">`int_(0)^(1)[int_(-1)^(1) (x^2 + y^2) dx]dy`</p>
+        </div>
+        <div class = "par">
+            <h3 class = "rojitos"> Step 2</h3>
+            <p class = "oscuritos">Keep y as a constant and integrate only with respect to x:</p>
+            <p class = "expresiones" class = "oscuritos">`int_(0)^(1)[ (x^3/3 + y^2x)|_(-1)^(1)]dy`</p>
+        </div>
+        <div class = "impar">
+            <h3 class = "rojitos"> Step 3</h3>
+            <p class = "oscuritos">Replace the inner expresion evaluating in the limits of x:</p>
+            <p class = "expresiones" class = "oscuritos">`int_(0)^(1)[(1/3 + y^2)-(-1/3-y^2)]dy =`<br>
+            `int_(0)^(1)[(2/3 + 2y^2)]dy`</p>
+        </div>
+        <div class = "par">
+            <h3 class = "rojitos"> Step 4</h3>
+            <p class = "oscuritos">Now integrate the obtained expresion with respect to y:</p>
+            <p class = "expresiones" class = "oscuritos">`(2/3y + 2y^3/3)|_(0)^(1)`</p>
+        </div>
+        <div class = "impar">
+            <h3 class = "rojitos"> Step 5</h3>
+            <p class = "oscuritos">Replace the inner expresion evaluating in the limits of y:</p>
+            <p class = "expresiones" class = "oscuritos">`(2/3 + 2/3)-(0 + 0)`</p>
+        </div> 
+        <div class = "par">
+            <h3 class = "rojitos"> Final answer</h3>
+            <p class = "oscuritos">The solid corresponding to the following figure has a volume of 4/3.<br><img class = "ejemplo1" src = "foticos/resultado.png"></img></p>
+        </div>      
+    </section>
+    <!-- <div class="cmath">
+        `f(x)= int_(0)^(2 pi) sin\ x\ dx = 0`
+    </div> -->
+    <footer>
+        <p class = "mismo">This site was created by Gabriela Ortiz for the Web Design specialization in Coursera.</p>
+        <p class = "otro"><a class="fas fa-user" href = "about.html"></a>More info about me here</p>
+        <p class = "otro"><a class="fab fa-linkedin" href = "https://www.linkedin.com/in/gabriela-ortiz-1610471b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY5fD4%2BT2Ru%2BHyX%2BYceuTeg%3D%3D"></a> Find me on LinkedIn</p></footer>
+</body>
+</html>
